@@ -19,3 +19,4 @@ Use histograms, scatter plots, and heatmaps to visually represent regional dispa
 Relate findings to existing demographic theories, such as the demographic transition model, which explains the relationship between development, urbanization, and population metrics. 
 This research aims to provide a nuanced understanding of demographic patterns and their linkages to urbanization, helping bridge gaps in regional and urban planning efforts.
 
+
