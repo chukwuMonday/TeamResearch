@@ -1,5 +1,9 @@
+
+library(ggplot2)
+
+
 # Load the data
-data <- read.csv("path_to_your_file/russian_demography.csv")
+data <- read.csv("C:/Users/hency/Documents/TeamResearch/russian_demography.csv")
 
 # Correlation between birth_rate and urbanization
 cor_test <- cor.test(data$birth_rate, data$urbanization, method = "pearson")
@@ -52,3 +56,4 @@ ggplot(filtered_data, aes(x = birth_rate)) +
     x = "Birth Rate",
     y = "Frequency"
   )
+
