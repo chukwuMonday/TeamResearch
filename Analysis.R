@@ -57,3 +57,16 @@ ggplot(filtered_data, aes(x = birth_rate)) +
     y = "Frequency"
   )
 
+# Normal Bell Curve for Birth Rate
+ggplot(data, aes(x = birth_rate)) +
+  geom_density(color = "blue", fill = "lightblue", alpha = 0.7) +
+  labs(title = "Normal Distribution of Birth Rate", x = "Birth Rate", y = "Density") +
+  theme_minimal()
+
+# Box Plot of Birth Rate by Region
+ggplot(data, aes(x = region, y = birth_rate)) +
+  geom_boxplot(fill = "lightgreen", color = "darkgreen") +
+  labs(title = "Box Plot of Birth Rate by Region", x = "Region", y = "Birth Rate") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), # Rotate x-axis labels for readability
+        plot.title = element_text(hjust = 0.5))
+

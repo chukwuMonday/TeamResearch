@@ -1,6 +1,6 @@
 TeamResearch
 
-Research Question: "Are there significant regional differences in birth and death rates, and how do these differences correlate with levels of urbanization?"
+Research Question: "Is there a difference in the mean of birth rates between different regions?"
 
 Key Components of the Question: 
 Investigates whether there are variations in birth rates and death rates across different regions. This aspect explores geographical disparities, which may reflect economic, cultural, or healthcare accessibility differences.
