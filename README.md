@@ -64,13 +64,9 @@ Perform exploratory data analysis (EDA) to understand the trends and distributio
 Check for missing data and outliers in the birth_rate and npg variables.
 
 Statistical Methods:
-
-We used Pearson’s correlation coefficient to assess the linear relationship between birth rate and net population growth.
-If the relationship is nonlinear, consider other measures like Spearman’s rank correlation or regression analysis.
-
-Control for Confounders:
-
-Include other factors such as death rate, urbanization, and economic indicators (like gdw) to refine the analysis and ensure birth rate is an independent driver.
+Test Used: Spearman’s Correlation Coefficient.
+Choice of Test: Spearman’s correlation quantifies the form and intensity of a straight relationship between two quantitative variables, namely, birth rate and net population growth (NPG).
+Appropriateness: This test is proper for the research question because it reveals if and to what extent birth rates affect NPG in Russian regions. Before proceeding with the analysis, a check of the test assumptions is required: the residuals are normally distributed and linear.
 
 Visualization:
 
