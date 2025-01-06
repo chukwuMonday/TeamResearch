@@ -1,4 +1,5 @@
 Version: 1.0
+ProjectId: d7f288a4-9f8e-4684-b477-959ab8a14b2b
 
 RestoreWorkspace: Default
 SaveWorkspace: Default
@@ -11,3 +12,5 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
+
+ProjectName: TeamResearch
