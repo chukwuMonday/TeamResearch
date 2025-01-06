@@ -48,7 +48,7 @@ Perform exploratory data analysis (EDA) to understand the trends and distributio
 Check for missing data and outliers in the birth_rate and npg variables.
 Statistical Methods:
 
-Use Pearson’s correlation coefficient to assess the linear relationship between birth rate and net population growth.
+We used Pearson’s correlation coefficient to assess the linear relationship between birth rate and net population growth.
 If the relationship is nonlinear, consider other measures like Spearman’s rank correlation or regression analysis.
 Control for Confounders:
 
