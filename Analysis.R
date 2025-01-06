@@ -3,12 +3,25 @@ library(dplyr)
 library(ggplot2)
 library(tidyr)
 library(car)
+# Install dplyr if not already installed
+if (!requireNamespace("dplyr", quietly = TRUE)) {
+  install.packages("dplyr")
+}
+
+# Load dplyr
+library(dplyr)
+
 
 # Load the data
-data <- read.csv("C:/Users/hency/Documents/TeamResearch/russian_demography.csv")
+data <- read.csv("C:/Users/Henry/Documents/Research/TeamResearch/russian_demography.csv")
 
 # Check for missing values
-colSums(is.na(data))
+print(colSums(is.na(data)))
+
+# Ensure birth_rate and urbanization columns exist
+if (!("birth_rate" %in% colnames(data)) || !("urbanization" %in% colnames(data))) {
+  stop("The dataset does not contain the required columns: 'birth_rate' or 'urbanization'.")
+}
 
 # Correlation between birth_rate and urbanization
 if (!any(is.na(data$birth_rate)) && !any(is.na(data$urbanization))) {
@@ -22,8 +35,10 @@ if (!any(is.na(data$birth_rate)) && !any(is.na(data$urbanization))) {
 data <- data %>%
   mutate(
     urban_category = ifelse(urbanization > 50, "Urbanized", "Less Urbanized"),
-    birth_rate_category = ifelse(birth_rate > median(birth_rate, na.rm = TRUE), 
-                                 "High Birth Rate", "Low Birth Rate")
+    birth_rate_category = ifelse(
+      birth_rate > median(birth_rate, na.rm = TRUE), 
+      "High Birth Rate", "Low Birth Rate"
+    )
   )
 
 # Create a contingency table
@@ -38,6 +53,11 @@ if (all(contingency_table > 0)) {
   print("Chi-Square Test cannot be performed due to zero counts in the contingency table.")
 }
 
+# Ensure 'region' column exists
+if (!("region" %in% colnames(data))) {
+  stop("The dataset does not contain the 'region' column.")
+}
+
 # Clean the data by removing rows with missing values in 'birth_rate' and 'region'
 demography_data_clean <- data %>%
   drop_na(birth_rate, region)
@@ -50,10 +70,10 @@ anova_summary <- summary(anova_result)
 print(anova_summary)
 
 # Extract p-value from the ANOVA summary
-p_value <- anova_summary[[1]]$`Pr(>F)`[1]
+p_value <- anova_summary[[1]][["Pr(>F)"]][1]
 
 # Interpret the p-value
-if (p_value < 0.05) {
+if (!is.na(p_value) && p_value < 0.05) {
   print("There is a significant difference in the mean birth rates between regions.")
 } else {
   print("There is no significant difference in the mean birth rates between regions.")
@@ -67,11 +87,15 @@ ggplot(demography_data_clean, aes(x = region, y = birth_rate)) +
   labs(title = "Boxplot of Birth Rates by Region", x = "Region", y = "Birth Rate")
 
 # Histogram with normal curve overlay
-ggplot(data, aes(x = birth_rate)) +
-  geom_histogram(aes(y = ..density..), binwidth = 1, fill = "blue", color = "black", alpha = 0.7) +
-  stat_function(fun = dnorm, 
-                args = list(mean = mean(data$birth_rate, na.rm = TRUE), 
-                            sd = sd(data$birth_rate, na.rm = TRUE)), 
-                color = "red", size = 1) +
-  labs(title = "Histogram of Birth Rate with Normal Curve", x = "Birth Rate", y = "Density")
+if ("birth_rate" %in% colnames(data)) {
+  ggplot(data, aes(x = birth_rate)) +
+    geom_histogram(aes(y = ..density..), binwidth = 1, fill = "blue", color = "black", alpha = 0.7) +
+    stat_function(fun = dnorm, 
+                  args = list(mean = mean(data$birth_rate, na.rm = TRUE), 
+                              sd = sd(data$birth_rate, na.rm = TRUE)), 
+                  color = "red", size = 1) +
+    labs(title = "Histogram of Birth Rate with Normal Curve", x = "Birth Rate", y = "Density")
+} else {
+  print("The 'birth_rate' column does not exist in the dataset.")
+}
 
