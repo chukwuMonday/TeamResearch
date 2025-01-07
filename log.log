@@ -1,0 +1,276 @@
+commit 6f3eed087aa5a6c9afaf3d06b7f09f0fd214a59a
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Tue Jan 7 13:22:50 2025 +0000
+
+    cleaning data
+
+ Output/Rplot.png              | Bin 6223 -> 0 bytes
+ Output/analysis 1 output.jpeg | Bin 269226 -> 0 bytes
+ test.R                        |  21 ---------------------
+ 3 files changed, 21 deletions(-)
+
+commit f502f5f195291df8dee71542c0a70127fb51e926
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Tue Jan 7 13:14:38 2025 +0000
+
+    few touches
+
+ histogram upd.png | Bin 17582 -> 0 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ea99738a698bd625abfcd215fdc26cadc85a6a51
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Jan 6 21:37:29 2025 +0000
+
+    new analysis
+
+ Analysis of test.R    |  67 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ Analysis.R            |  50 +++++++++++++++++++++++++++----------
+ boxplot updated.png   | Bin 0 -> 18677 bytes
+ histogram upd.png     | Bin 0 -> 17582 bytes
+ histogram updated.png | Bin 0 -> 17582 bytes
+ 5 files changed, 104 insertions(+), 13 deletions(-)
+
+commit 1739288265935e4e9d65ec2abd05b5b2d3de1f6b
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Jan 6 19:34:49 2025 +0000
+
+    rebases
+
+ Analysis.zip               | Bin 0 -> 544627 bytes
+ Final Research Report.docx | Bin 64802 -> 0 bytes
+ GROUP A321 (1).pptx        | Bin 152942 -> 0 bytes
+ GROUP A321.pptx            | Bin 0 -> 209311 bytes
+ Introduction.txt           |   3 +-
+ README.md                  |  93 +++++++++++----------------------------------
+ TeamResearch.Rproj         |   4 +-
+ final ppt A321.pptx        | Bin 0 -> 810386 bytes
+ test.R                     |  21 ++++++++++
+ 9 files changed, 46 insertions(+), 75 deletions(-)
+
+commit 1f9b0e7b95fec9917c8008617765b7f0359df7b3
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Jan 6 17:46:55 2025 +0000
+
+    final report upload
+
+ Final Research Report.docx | Bin 0 -> 64802 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 86f09593d677575159c176f395950baf8c148532
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Jan 6 17:30:48 2025 +0000
+
+    minor fixes 2
+
+ README.md | 10 +++-------
+ 1 file changed, 3 insertions(+), 7 deletions(-)
+
+commit 7b43360d6e9a5a14c9c48dd043e4f47825f9b218
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Jan 6 17:23:17 2025 +0000
+
+    fix for README.md
+
+ README.md | 24 ++++++++++++++++++++++--
+ 1 file changed, 22 insertions(+), 2 deletions(-)
+
+commit 0617c055f0bd7f2e8f538b3b04f6bec43a83398c
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Jan 6 17:18:56 2025 +0000
+
+    repo cleaning
+
+ GROUP A321.pptx     | Bin 209311 -> 0 bytes
+ Untitled            |   1 -
+ final ppt A321.pptx | Bin 810386 -> 0 bytes
+ test.R              |  21 ---------------------
+ 4 files changed, 22 deletions(-)
+
+commit 44275157a11124ec73261bd41d4c569878ba70bb
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Jan 6 17:13:05 2025 +0000
+
+    typo fix
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 8aa3eb744ef0b5daf80f3efd577f4e34d36a5136
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Jan 6 17:10:06 2025 +0000
+
+    minor fixs
+
+ GROUP A321 (1).pptx | Bin 0 -> 152942 bytes
+ Introduction.txt    |   3 +-
+ README.md           |  77 ++++++++++++++++++++++++++++++++++++----------------
+ 3 files changed, 56 insertions(+), 24 deletions(-)
+
+commit 4f4affaae49f03f2d04e6fa08b0149f57f3d23ba
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Jan 6 15:27:05 2025 +0000
+
+    testing acc
+
+ TeamResearch.Rproj | 3 +++
+ Untitled           | 1 +
+ 2 files changed, 4 insertions(+)
+
+commit c97a77b4f74fa2dd9c19d890d3e381570e3f8681
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Mon Nov 25 08:49:21 2024 +0000
+
+    cleanings
+
+ Analysis.R                                         | 115 +++++++++++----------
+ Output/Rplot.png                                   | Bin 9294 -> 6223 bytes
+ .../analysis 1 output.jpeg                         | Bin
+ Output/bell curve.png                              | Bin 5488 -> 0 bytes
+ Output/box plot.png                                | Bin 50648 -> 0 bytes
+ analysis 1.R                                       |  40 -------
+ analysis 2 output.jpeg                             | Bin 77350 -> 0 bytes
+ analysis 2.R                                       |  49 ---------
+ analysis 3 output.jpeg                             | Bin 56221 -> 0 bytes
+ analysis 3.R                                       |  17 ---
+ analysis 4 output.jpeg                             | Bin 245389 -> 0 bytes
+ analysis 4.R                                       |  24 -----
+ analysis 5 output.jpeg                             | Bin 198610 -> 0 bytes
+ analysis 5.R                                       |  32 ------
+ test.R                                             |  21 ++++
+ 15 files changed, 81 insertions(+), 217 deletions(-)
+
+commit 9bb252c0b0daeec42ffa006bd9b05a6d79af099d
+Author: nav334 <mn24act@herts.ac.uk>
+Date:   Sun Nov 24 19:05:46 2024 +0000
+
+    Add files via upload
+
+ final ppt A321.pptx | Bin 0 -> 810386 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit cf7cb237089d4367f0dd1f496fe4c8dbd4097172
+Author: manichandu007 <mk24afg@herts.ac.uk>
+Date:   Sun Nov 24 15:29:39 2024 +0000
+
+    Add files via upload
+
+ analysis 1 output.jpeg | Bin 0 -> 269226 bytes
+ analysis 1.R           |  40 ++++++++++++++++++++++++++++++++++++++++
+ analysis 2 output.jpeg | Bin 0 -> 77350 bytes
+ analysis 2.R           |  49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ analysis 3 output.jpeg | Bin 0 -> 56221 bytes
+ analysis 3.R           |  17 +++++++++++++++++
+ analysis 4 output.jpeg | Bin 0 -> 245389 bytes
+ analysis 4.R           |  24 ++++++++++++++++++++++++
+ analysis 5 output.jpeg | Bin 0 -> 198610 bytes
+ analysis 5.R           |  32 ++++++++++++++++++++++++++++++++
+ 10 files changed, 162 insertions(+)
+
+commit b7c012eafb1039c26c7b6aaf8b5a4e37309af99c
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Sun Nov 24 00:36:34 2024 +0000
+
+    few fixes
+
+ Introduction | 5 -----
+ 1 file changed, 5 deletions(-)
+
+commit bdd1fe3149abff6554838d1f820cddac65998047
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Sun Nov 24 00:24:23 2024 +0000
+
+    box plot and other output
+
+ Analysis.R            |  13 +++++++++++++
+ Introduction          |   5 +++++
+ Output/bell curve.png | Bin 0 -> 5488 bytes
+ Output/box plot.png   | Bin 0 -> 50648 bytes
+ README.md             |   2 +-
+ 5 files changed, 19 insertions(+), 1 deletion(-)
+
+commit 8a9df0d2f87d8b1cebaf87de21dd896ceb02c1bf
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Sun Nov 24 00:09:28 2024 +0000
+
+    visualization
+
+ Analysis.R       |   7 ++++++-
+ Output/Rplot.png | Bin 0 -> 9294 bytes
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+commit fc3b46700347529e8fc9ff9f21a834ac80eb7777
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Thu Nov 21 20:54:22 2024 +0000
+
+    introduction push
+
+ Introduction => Introduction.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 4759afca12ff564bf006a1fbbd29a74fbb1c8f11
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Thu Nov 21 20:52:03 2024 +0000
+
+    minor fix on readme
+
+ README.md | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+commit a000b8684f9d3c9df4c1182d8ac13c61ca9ea33a
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Thu Nov 21 20:49:38 2024 +0000
+
+    readme update
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 5f60bd40e0ddfe36ba5a971eff0882a0fe72bda9
+Author: chukwuMonday <cm24abv@herts.ac.uk>
+Date:   Thu Nov 21 20:47:56 2024 +0000
+
+    Update README.md
+
+ README.md | 46 +++++++++++++++-------------------------------
+ 1 file changed, 15 insertions(+), 31 deletions(-)
+
+commit c7a74d95559a36d1cf7c1b6ee8c92912f11e4fbd
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Thu Nov 21 20:41:56 2024 +0000
+
+    project push
+
+ Analysis.R      |  54 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ GROUP A321.pptx | Bin 0 -> 209311 bytes
+ Introduction    |   5 +++++
+ README.md       |  38 +++++++++++++++++++++++++++++++++++++-
+ 4 files changed, 96 insertions(+), 1 deletion(-)
+
+commit d69b40f08d7efd1f2ad04af5593e747140c439c5
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Thu Nov 21 18:25:24 2024 +0000
+
+    adding dataset
+
+ russian_demography.csv | 2381 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 2381 insertions(+)
+
+commit 2ff3113e3aa3e8c3b8fc3c3fcf10a6263ec9753e
+Author: Chukwu Monday <cm24abv@herts.ac.uk>
+Date:   Wed Nov 20 10:28:02 2024 +0000
+
+    testing first push
+
+ .gitignore         |  4 ++++
+ TeamResearch.Rproj | 13 +++++++++++++
+ 2 files changed, 17 insertions(+)
+
+commit 06db7fda4b276db543836775e4e01b01419ff277
+Author: chukwuMonday <cm24abv@herts.ac.uk>
+Date:   Wed Nov 20 10:09:48 2024 +0000
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)

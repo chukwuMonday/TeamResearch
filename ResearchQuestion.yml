@@ -1,0 +1,46 @@
+# This file is in YAML format. You must ensure that the punctuation
+# and whitespace are preserved. Do NOT use Windows Notepad to edit this
+# file; use a real programming editor like Notepad++ instead.
+
+# Write your group name exactly as it appears on Canvas.
+group: A321
+
+# Write the names of your group members as a comma-separated list
+# within the square brackets.
+members: [Muhammad Naveed, Henry Monday , Ravi kishore Kommina, Mani chandu kommaraneni]
+
+# Write your general topic.
+topic: Analysis of Russian Demographic Data
+
+# Write your research question, following one of the three allowed templates.
+# Be sure your question is all on one line.
+RQ: Is there a difference in the mean of birth rates between different regions?
+
+# Write your independent and dependent variables. These should be the column names (reported by R colnames()) where these variables are found in your dataset's CSV file.
+independent-var: [region]
+dependent-var: [birth_rate]
+
+# Write the null hypothesis for your research question, again ensuring it is all on one line.
+null-hypothesis: There is no significant difference in the mean of birth rates between different Russian regions.
+
+# Write the alternative hypothesis for your research question, again ensuring it is all on one line.
+alt-hypothesis: There is a significant difference in the mean of birth rates between different Russian regions.
+
+# Write the dataset ID:
+dataset-id: DS105
+
+# Write the dataset URL.
+dataset-url: 
+
+# Write the dataset CSV filename, exactly as it appears on the SharePoint list (which should be the same as the one in your repository!)
+dataset-file: russian_demography.csv
+
+# Paste the output of loading your dataset into R, and executing the colnames() function, into the space below the `columns: |` line.
+# Put two spaces *before* every line you pasted.
+
+# Loading the dataset
+RussianDemography <- read_csv("russian_demography.csv", show_col_types = FALSE)
+
+# Printing column names
+colnames(RussianDemography)
+[1] "year"         "region"       "npg"          "birth_rate"   "death_rate"   "gdw"          "urbanization"
